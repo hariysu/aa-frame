@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../core/utils.dart';
+import '../../routes/app_router.dart';
 
 /// Home screen of the application
 class HomeScreen extends StatelessWidget {
@@ -14,8 +15,8 @@ class HomeScreen extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.settings),
             onPressed: () {
-              // TODO: Navigate to settings screen
-              Utils.showSnackBar(context, 'Settings pressed');
+              // Navigate to settings screen
+              AppRouter.navigateTo(context, AppRoutes.settings);
             },
           ),
         ],

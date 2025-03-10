@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../presentation/screens/home_screen.dart';
+import '../presentation/screens/settings_screen.dart';
 
 /// Route names used in the app
 class AppRoutes {
@@ -24,6 +25,11 @@ class AppRouter {
           builder: (_) => const HomeScreen(),
         );
 
+      case AppRoutes.settings:
+        return MaterialPageRoute(
+          builder: (_) => const SettingsScreen(),
+        );
+
       // TODO: Add more routes as screens are created
       // case AppRoutes.users:
       //   return MaterialPageRoute(
@@ -34,11 +40,6 @@ class AppRouter {
       //   final userId = settings.arguments as String;
       //   return MaterialPageRoute(
       //     builder: (_) => UserDetailsScreen(userId: userId),
-      //   );
-
-      // case AppRoutes.settings:
-      //   return MaterialPageRoute(
-      //     builder: (_) => const SettingsScreen(),
       //   );
 
       // case AppRoutes.login:
