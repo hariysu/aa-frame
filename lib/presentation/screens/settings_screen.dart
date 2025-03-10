@@ -56,10 +56,21 @@ class SettingsScreen extends StatelessWidget {
             onLocaleChanged: (Locale locale) async {
               await languageProvider.setLocale(context, locale);
 
-              // Get the language name
-              final languageName = locale.languageCode == 'en'
-                  ? 'settings.language.english'.tr()
-                  : 'settings.language.spanish'.tr();
+              // Get the language name based on locale
+              String languageName;
+              switch (locale.languageCode) {
+                case 'en':
+                  languageName = 'settings.language.english'.tr();
+                  break;
+                case 'es':
+                  languageName = 'settings.language.spanish'.tr();
+                  break;
+                case 'tr':
+                  languageName = 'settings.language.turkish'.tr();
+                  break;
+                default:
+                  languageName = locale.languageCode;
+              }
 
               Utils.showSnackBar(
                 context,
@@ -180,10 +191,7 @@ class _LanguageSelector extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: supportedLocales.map((locale) {
-        final isSelected = locale.languageCode == currentLocale.languageCode;
-        final languageName = locale.languageCode == 'en'
-            ? 'settings.language.english'.tr()
-            : 'settings.language.spanish'.tr();
+        final languageName = _getLanguageName(locale);
 
         return RadioListTile<String>(
           title: Text(languageName),
@@ -200,5 +208,18 @@ class _LanguageSelector extends StatelessWidget {
         );
       }).toList(),
     );
+  }
+
+  String _getLanguageName(Locale locale) {
+    switch (locale.languageCode) {
+      case 'en':
+        return 'settings.language.english'.tr();
+      case 'es':
+        return 'settings.language.spanish'.tr();
+      case 'tr':
+        return 'settings.language.turkish'.tr();
+      default:
+        return locale.languageCode;
+    }
   }
 }

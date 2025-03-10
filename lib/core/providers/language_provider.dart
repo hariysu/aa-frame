@@ -64,6 +64,8 @@ class LanguageProvider extends ChangeNotifier {
         return 'English';
       case 'es':
         return 'Español';
+      case 'tr':
+        return 'Türkçe';
       default:
         return 'Unknown';
     }
@@ -73,5 +75,6 @@ class LanguageProvider extends ChangeNotifier {
   List<Locale> get supportedLocales => const [
         Locale('en'),
         Locale('es'),
+        Locale('tr'),
       ];
 }

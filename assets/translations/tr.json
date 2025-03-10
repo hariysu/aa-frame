@@ -1,0 +1,63 @@
+{
+  "app": {
+    "name": "AA Frame",
+    "title": "AA Frame"
+  },
+  "common": {
+    "ok": "Tamam",
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "success": "Başarılı",
+    "retry": "Tekrar Dene",
+    "search": "Ara"
+  },
+  "home": {
+    "title": "Ana Sayfa",
+    "welcome": "AA Frame'e Hoş Geldiniz",
+    "view_users": "Kullanıcıları Görüntüle",
+    "users_button_pressed": "Kullanıcılar düğmesine basıldı",
+    "add_button_pressed": "Ekle düğmesine basıldı"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "appearance": "Görünüm",
+    "theme": {
+      "light": "Açık Tema",
+      "dark": "Koyu Tema",
+      "system": "Sistem Teması",
+      "changed": "Tema {theme} olarak değiştirildi"
+    },
+    "language": {
+      "title": "Dil",
+      "english": "İngilizce",
+      "spanish": "İspanyolca",
+      "turkish": "Türkçe",
+      "changed": "Dil {language} olarak değiştirildi"
+    },
+    "about": {
+      "title": "Hakkında",
+      "subtitle": "Uygulama sürümü, lisanslar ve daha fazlası",
+      "button_pressed": "Hakkında düğmesine basıldı"
+    }
+  },
+  "auth": {
+    "login": "Giriş Yap",
+    "register": "Kayıt Ol",
+    "email": "E-posta",
+    "password": "Şifre",
+    "forgot_password": "Şifrenizi mi unuttunuz?",
+    "no_account": "Hesabınız yok mu?",
+    "have_account": "Zaten hesabınız var mı?",
+    "sign_up": "Kaydol",
+    "sign_in": "Giriş Yap"
+  },
+  "validation": {
+    "required": "Bu alan zorunludur",
+    "email": "Lütfen geçerli bir e-posta adresi girin",
+    "password": "Şifre en az 8 karakter olmalıdır"
+  }
+} 

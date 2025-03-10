@@ -35,6 +35,7 @@
       "title": "Language",
       "english": "English",
       "spanish": "Spanish",
+      "turkish": "Turkish",
       "changed": "Language changed to {language}"
     },
     "about": {

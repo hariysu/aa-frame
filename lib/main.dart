@@ -22,7 +22,7 @@ void main() async {
   // Run the app
   runApp(
     EasyLocalization(
-      supportedLocales: const [Locale('en'), Locale('es')],
+      supportedLocales: const [Locale('en'), Locale('es'), Locale('tr')],
       path: 'assets/translations',
       fallbackLocale: const Locale('en'),
       useOnlyLangCode: true,
