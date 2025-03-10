@@ -1,0 +1,62 @@
+{
+  "app": {
+    "name": "AA Frame",
+    "title": "AA Frame"
+  },
+  "common": {
+    "ok": "Aceptar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "retry": "Reintentar",
+    "search": "Buscar"
+  },
+  "home": {
+    "title": "Inicio",
+    "welcome": "Bienvenido a AA Frame",
+    "view_users": "Ver Usuarios",
+    "users_button_pressed": "Botón de usuarios presionado",
+    "add_button_pressed": "Botón de agregar presionado"
+  },
+  "settings": {
+    "title": "Configuración",
+    "appearance": "Apariencia",
+    "theme": {
+      "light": "Tema Claro",
+      "dark": "Tema Oscuro",
+      "system": "Tema del Sistema",
+      "changed": "Tema cambiado a {theme}"
+    },
+    "language": {
+      "title": "Idioma",
+      "english": "Inglés",
+      "spanish": "Español",
+      "changed": "Idioma cambiado a {language}"
+    },
+    "about": {
+      "title": "Acerca de",
+      "subtitle": "Versión de la aplicación, licencias y más",
+      "button_pressed": "Botón de acerca de presionado"
+    }
+  },
+  "auth": {
+    "login": "Iniciar Sesión",
+    "register": "Registrarse",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "forgot_password": "¿Olvidó su Contraseña?",
+    "no_account": "¿No tiene una cuenta?",
+    "have_account": "¿Ya tiene una cuenta?",
+    "sign_up": "Registrarse",
+    "sign_in": "Iniciar Sesión"
+  },
+  "validation": {
+    "required": "Este campo es obligatorio",
+    "email": "Por favor, introduzca un correo electrónico válido",
+    "password": "La contraseña debe tener al menos 8 caracteres"
+  }
+} 
