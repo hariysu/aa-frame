@@ -66,6 +66,8 @@ class LanguageProvider extends ChangeNotifier {
         return 'Español';
       case 'tr':
         return 'Türkçe';
+      case 'de':
+        return 'Deutsch';
       default:
         return 'Unknown';
     }
@@ -76,5 +78,6 @@ class LanguageProvider extends ChangeNotifier {
         Locale('en'),
         Locale('es'),
         Locale('tr'),
+        Locale('de'),
       ];
 }
