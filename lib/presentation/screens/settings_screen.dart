@@ -101,18 +101,6 @@ class SettingsScreen extends StatelessWidget {
       ),
     );
   }
-
-  /// Get readable name for theme mode
-  String _getThemeModeName(ThemeMode mode) {
-    switch (mode) {
-      case ThemeMode.light:
-        return 'settings.theme.light';
-      case ThemeMode.dark:
-        return 'settings.theme.dark';
-      case ThemeMode.system:
-        return 'settings.theme.system';
-    }
-  }
 }
 
 /// Section header widget
