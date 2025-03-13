@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:easy_localization/easy_localization.dart';
 
@@ -7,6 +6,7 @@ import 'config/app_config.dart';
 import 'core/theme.dart';
 import 'core/providers/theme_provider.dart';
 import 'core/providers/language_provider.dart';
+import 'core/services/notification_service.dart';
 import 'routes/app_router.dart';
 
 void main() async {
@@ -15,6 +15,9 @@ void main() async {
 
   // Initialize EasyLocalization
   await EasyLocalization.ensureInitialized();
+
+  // Initialize notification service
+  await NotificationService.instance.initialize();
 
   // Initialize app configuration
   AppConfig.initialize(environment: Environment.development);

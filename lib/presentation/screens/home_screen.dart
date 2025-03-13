@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import '../../core/utils.dart';
+import '../../core/services/notification_service.dart';
 import '../../routes/app_router.dart';
 
 /// Home screen of the application
@@ -43,6 +44,16 @@ class HomeScreen extends StatelessWidget {
                 Utils.showSnackBar(context, 'home.users_button_pressed'.tr());
               },
               child: Text('home.view_users'.tr()),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                NotificationService.instance.showNotification(
+                  title: 'AA Frame',
+                  body: 'This is a test notification!',
+                );
+              },
+              child: const Text('Show Notification'),
             ),
           ],
         ),
