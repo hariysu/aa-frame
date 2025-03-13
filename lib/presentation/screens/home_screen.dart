@@ -55,6 +55,13 @@ class HomeScreen extends StatelessWidget {
               },
               child: const Text('Show Notification'),
             ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                AppRouter.navigateTo(context, AppRoutes.cachedImages);
+              },
+              child: const Text('View Cached Images'),
+            ),
           ],
         ),
       ),

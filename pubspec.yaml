@@ -19,6 +19,8 @@ dependencies:
   easy_localization: ^3.0.3
 # Notifications
   flutter_local_notifications: ^18.0.1
+# Image Caching
+  cached_network_image: ^3.4.1
 
 dev_dependencies:
   flutter_test:
