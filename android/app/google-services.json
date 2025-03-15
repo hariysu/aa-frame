@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "597525649936",
+    "project_id": "aa-frame-0",
+    "storage_bucket": "aa-frame-0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597525649936:android:d659bfa62d69efa0d9c895",
+        "android_client_info": {
+          "package_name": "com.example.aa_frame"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "***REMOVED***"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

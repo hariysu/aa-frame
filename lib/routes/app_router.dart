@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../presentation/screens/home_screen.dart';
 import '../presentation/screens/settings_screen.dart';
 import '../presentation/screens/cached_image_screen.dart';
+import '../presentation/screens/crashlytics_test_screen.dart';
 
 /// Route names used in the app
 class AppRoutes {
@@ -12,6 +13,7 @@ class AppRoutes {
   static const String login = '/login';
   static const String register = '/register';
   static const String cachedImages = '/cached-images';
+  static const String crashlyticsTest = '/crashlytics-test';
 
   // Prevent instantiation
   AppRoutes._();
@@ -35,6 +37,11 @@ class AppRouter {
       case AppRoutes.cachedImages:
         return MaterialPageRoute(
           builder: (_) => const CachedImageScreen(),
+        );
+
+      case AppRoutes.crashlyticsTest:
+        return MaterialPageRoute(
+          builder: (_) => const CrashlyticsTestScreen(),
         );
 
       // TODO: Add more routes as screens are created

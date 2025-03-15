@@ -1,48 +1,69 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 import 'config/app_config.dart';
 import 'core/theme.dart';
 import 'core/providers/theme_provider.dart';
 import 'core/providers/language_provider.dart';
 import 'core/services/notification_service.dart';
+import 'core/services/crashlytics_service.dart';
 import 'routes/app_router.dart';
+import 'firebase_options.dart';
 
 void main() async {
   // Ensure Flutter is initialized
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Initialize EasyLocalization
-  await EasyLocalization.ensureInitialized();
+  try {
+    // Initialize Firebase
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
 
-  // Initialize notification service
-  await NotificationService.instance.initialize();
+    // Initialize Crashlytics
+    await CrashlyticsService.instance.initialize();
 
-  // Initialize app configuration
-  AppConfig.initialize(environment: Environment.development);
+    // Initialize EasyLocalization
+    await EasyLocalization.ensureInitialized();
 
-  // Run the app
-  runApp(
-    EasyLocalization(
-      supportedLocales: const [
-        Locale('en'),
-        Locale('es'),
-        Locale('tr'),
-        Locale('de')
-      ],
-      path: 'assets/translations',
-      fallbackLocale: const Locale('en'),
-      useOnlyLangCode: true,
-      child: MultiProvider(
-        providers: [
-          ChangeNotifierProvider(create: (_) => ThemeProvider()),
-          ChangeNotifierProvider(create: (_) => LanguageProvider()),
+    // Initialize notification service
+    await NotificationService.instance.initialize();
+
+    // Initialize app configuration
+    AppConfig.initialize(environment: Environment.development);
+
+    // Run the app
+    runApp(
+      EasyLocalization(
+        supportedLocales: const [
+          Locale('en'),
+          Locale('es'),
+          Locale('tr'),
+          Locale('de')
         ],
-        child: const MyApp(),
+        path: 'assets/translations',
+        fallbackLocale: const Locale('en'),
+        useOnlyLangCode: true,
+        child: MultiProvider(
+          providers: [
+            ChangeNotifierProvider(create: (_) => ThemeProvider()),
+            ChangeNotifierProvider(create: (_) => LanguageProvider()),
+          ],
+          child: const MyApp(),
+        ),
       ),
-    ),
-  );
+    );
+  } catch (error, stackTrace) {
+    // Log any initialization errors to Crashlytics
+    await CrashlyticsService.instance.logError(
+      error,
+      stackTrace,
+      fatal: true,
+    );
+    rethrow;
+  }
 }
 
 /// The main app widget

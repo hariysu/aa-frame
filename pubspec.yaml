@@ -21,6 +21,9 @@ dependencies:
   flutter_local_notifications: ^18.0.1
 # Image Caching
   cached_network_image: ^3.4.1
+# Firebase
+  firebase_core: ^3.12.1
+  firebase_crashlytics: ^4.3.4
 
 dev_dependencies:
   flutter_test:

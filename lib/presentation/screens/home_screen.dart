@@ -62,6 +62,16 @@ class HomeScreen extends StatelessWidget {
               },
               child: const Text('View Cached Images'),
             ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                AppRouter.navigateTo(context, AppRoutes.crashlyticsTest);
+              },
+              style: ElevatedButton.styleFrom(
+                  //backgroundColor: Colors.deepPurple,
+                  ),
+              child: const Text('Test Crashlytics'),
+            ),
           ],
         ),
       ),
