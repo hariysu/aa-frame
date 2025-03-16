@@ -63,5 +63,45 @@
     "required": "Dieses Feld ist erforderlich",
     "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
     "password": "Das Passwort muss mindestens 8 Zeichen lang sein"
+  },
+  "intl_demo": {
+    "title": "Intl-Funktionen Demo",
+    "current_locale": {
+      "title": "Aktuelle Sprache",
+      "description": "Die aktuell von der App verwendete Sprache."
+    },
+    "date_formatting": {
+      "title": "Datumsformatierung",
+      "description": "Langes Datumsformat mit der aktuellen Sprache."
+    },
+    "time_formatting": {
+      "title": "Zeitformatierung",
+      "description": "Zeit mit Sekunden unter Verwendung der aktuellen Sprache."
+    },
+    "number_formatting": {
+      "title": "Zahlenformatierung",
+      "description": "Währungsformatierung basierend auf der Sprache."
+    },
+    "compact_number": {
+      "title": "Kompakte Zahl",
+      "description": "Kompakte Zahlenformatierung (z.B. 1,2 Mio.)."
+    },
+    "percentage": {
+      "title": "Prozentsatz",
+      "description": "Prozentformatierung basierend auf der Sprache."
+    },
+    "relative_time": {
+      "title": "Relative Zeit",
+      "description": "Relative Zeitformatierung (z.B. vor 30 Minuten)."
+    },
+    "time_units": {
+      "just_now": "Gerade eben",
+      "hour_singular": "Stunde",
+      "hour_plural": "Stunden",
+      "minute_singular": "Minute",
+      "minute_plural": "Minuten",
+      "ago": "vor"
+    },
+    "currency_symbol": "€"
   }
 } 

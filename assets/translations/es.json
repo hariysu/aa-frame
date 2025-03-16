@@ -63,5 +63,45 @@
     "required": "Este campo es obligatorio",
     "email": "Por favor ingresa un correo electrónico válido",
     "password": "La contraseña debe tener al menos 8 caracteres"
+  },
+  "intl_demo": {
+    "title": "Demostración de Funciones Intl",
+    "current_locale": {
+      "title": "Configuración Regional Actual",
+      "description": "La configuración regional que está utilizando la aplicación."
+    },
+    "date_formatting": {
+      "title": "Formato de Fecha",
+      "description": "Formato de fecha largo utilizando la configuración regional actual."
+    },
+    "time_formatting": {
+      "title": "Formato de Hora",
+      "description": "Hora con segundos utilizando la configuración regional actual."
+    },
+    "number_formatting": {
+      "title": "Formato de Número",
+      "description": "Formato de moneda basado en la configuración regional."
+    },
+    "compact_number": {
+      "title": "Número Compacto",
+      "description": "Formato de número compacto (por ejemplo, 1,2M)."
+    },
+    "percentage": {
+      "title": "Porcentaje",
+      "description": "Formato de porcentaje basado en la configuración regional."
+    },
+    "relative_time": {
+      "title": "Tiempo Relativo",
+      "description": "Formato de tiempo relativo (por ejemplo, hace 30 minutos)."
+    },
+    "time_units": {
+      "just_now": "Ahora mismo",
+      "hour_singular": "hora",
+      "hour_plural": "horas",
+      "minute_singular": "minuto",
+      "minute_plural": "minutos",
+      "ago": "hace"
+    },
+    "currency_symbol": "€"
   }
 } 

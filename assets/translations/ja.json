@@ -63,5 +63,45 @@
     "required": "このフィールドは必須です",
     "email": "有効なメールアドレスを入力してください",
     "password": "パスワードは8文字以上である必要があります"
+  },
+  "intl_demo": {
+    "title": "Intl機能デモ",
+    "current_locale": {
+      "title": "現在のロケール",
+      "description": "アプリで使用されている現在のロケール。"
+    },
+    "date_formatting": {
+      "title": "日付フォーマット",
+      "description": "現在のロケールを使用した長い日付形式。"
+    },
+    "time_formatting": {
+      "title": "時間フォーマット",
+      "description": "現在のロケールを使用した秒を含む時間。"
+    },
+    "number_formatting": {
+      "title": "数値フォーマット",
+      "description": "ロケールに基づく通貨フォーマット。"
+    },
+    "compact_number": {
+      "title": "コンパクト数値",
+      "description": "コンパクトな数値フォーマット（例：1.2M）。"
+    },
+    "percentage": {
+      "title": "パーセンテージ",
+      "description": "ロケールに基づくパーセンテージフォーマット。"
+    },
+    "relative_time": {
+      "title": "相対時間",
+      "description": "相対時間フォーマット（例：30分前）。"
+    },
+    "time_units": {
+      "just_now": "たった今",
+      "hour_singular": "時間",
+      "hour_plural": "時間",
+      "minute_singular": "分",
+      "minute_plural": "分",
+      "ago": "前"
+    },
+    "currency_symbol": "¥"
   }
 } 

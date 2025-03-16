@@ -63,5 +63,45 @@
     "required": "هذا الحقل مطلوب",
     "email": "يرجى إدخال بريد إلكتروني صالح",
     "password": "يجب أن تكون كلمة المرور 8 أحرف على الأقل"
+  },
+  "intl_demo": {
+    "title": "عرض ميزات Intl",
+    "current_locale": {
+      "title": "اللغة الحالية",
+      "description": "اللغة الحالية المستخدمة في التطبيق."
+    },
+    "date_formatting": {
+      "title": "تنسيق التاريخ",
+      "description": "تنسيق التاريخ الطويل باستخدام اللغة الحالية."
+    },
+    "time_formatting": {
+      "title": "تنسيق الوقت",
+      "description": "الوقت مع الثواني باستخدام اللغة الحالية."
+    },
+    "number_formatting": {
+      "title": "تنسيق الأرقام",
+      "description": "تنسيق العملة بناءً على اللغة."
+    },
+    "compact_number": {
+      "title": "الرقم المختصر",
+      "description": "تنسيق الرقم المختصر (مثال: 1.2 مليون)."
+    },
+    "percentage": {
+      "title": "النسبة المئوية",
+      "description": "تنسيق النسبة المئوية بناءً على اللغة."
+    },
+    "relative_time": {
+      "title": "الوقت النسبي",
+      "description": "تنسيق الوقت النسبي (مثال: منذ 30 دقيقة)."
+    },
+    "time_units": {
+      "just_now": "الآن",
+      "hour_singular": "ساعة",
+      "hour_plural": "ساعات",
+      "minute_singular": "دقيقة",
+      "minute_plural": "دقائق",
+      "ago": "منذ"
+    },
+    "currency_symbol": "د.إ"
   }
 } 

@@ -63,5 +63,45 @@
     "required": "Bu alan gereklidir",
     "email": "Lütfen geçerli bir e-posta adresi girin",
     "password": "Şifre en az 8 karakter olmalıdır"
+  },
+  "intl_demo": {
+    "title": "Intl Özellikleri Demosu",
+    "current_locale": {
+      "title": "Mevcut Yerel Ayar",
+      "description": "Uygulama tarafından kullanılan mevcut yerel ayar."
+    },
+    "date_formatting": {
+      "title": "Tarih Biçimlendirme",
+      "description": "Mevcut yerel ayarı kullanarak uzun tarih biçimi."
+    },
+    "time_formatting": {
+      "title": "Saat Biçimlendirme",
+      "description": "Mevcut yerel ayarı kullanarak saniyeli saat."
+    },
+    "number_formatting": {
+      "title": "Sayı Biçimlendirme",
+      "description": "Yerel ayara dayalı para birimi biçimlendirme."
+    },
+    "compact_number": {
+      "title": "Kompakt Sayı",
+      "description": "Kompakt sayı biçimlendirme (örneğin, 1,2M)."
+    },
+    "percentage": {
+      "title": "Yüzde",
+      "description": "Yerel ayara dayalı yüzde biçimlendirme."
+    },
+    "relative_time": {
+      "title": "Göreceli Zaman",
+      "description": "Göreceli zaman biçimlendirme (örneğin, 30 dakika önce)."
+    },
+    "time_units": {
+      "just_now": "Az önce",
+      "hour_singular": "saat",
+      "hour_plural": "saat",
+      "minute_singular": "dakika",
+      "minute_plural": "dakika",
+      "ago": "önce"
+    },
+    "currency_symbol": "₺"
   }
 } 

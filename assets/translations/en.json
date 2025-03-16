@@ -63,5 +63,45 @@
     "required": "This field is required",
     "email": "Please enter a valid email",
     "password": "Password must be at least 8 characters"
+  },
+  "intl_demo": {
+    "title": "Intl Features Demo",
+    "current_locale": {
+      "title": "Current Locale",
+      "description": "The current locale being used by the app."
+    },
+    "date_formatting": {
+      "title": "Date Formatting",
+      "description": "Long date format using the current locale."
+    },
+    "time_formatting": {
+      "title": "Time Formatting",
+      "description": "Time with seconds using the current locale."
+    },
+    "number_formatting": {
+      "title": "Number Formatting",
+      "description": "Currency formatting based on locale."
+    },
+    "compact_number": {
+      "title": "Compact Number",
+      "description": "Compact number formatting (e.g., 1.2M)."
+    },
+    "percentage": {
+      "title": "Percentage",
+      "description": "Percentage formatting based on locale."
+    },
+    "relative_time": {
+      "title": "Relative Time",
+      "description": "Relative time formatting (e.g., 30 minutes ago)."
+    },
+    "time_units": {
+      "just_now": "Just now",
+      "hour_singular": "hour",
+      "hour_plural": "hours",
+      "minute_singular": "minute",
+      "minute_plural": "minutes",
+      "ago": "ago"
+    },
+    "currency_symbol": "$"
   }
 } 
