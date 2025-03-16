@@ -67,10 +67,14 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 AppRouter.navigateTo(context, AppRoutes.crashlyticsTest);
               },
-              style: ElevatedButton.styleFrom(
-                  //backgroundColor: Colors.deepPurple,
-                  ),
               child: const Text('Test Crashlytics'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                AppRouter.navigateTo(context, AppRoutes.secureStorage);
+              },
+              child: const Text('Secure Storage'),
             ),
           ],
         ),

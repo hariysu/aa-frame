@@ -3,6 +3,7 @@ import '../presentation/screens/home_screen.dart';
 import '../presentation/screens/settings_screen.dart';
 import '../presentation/screens/cached_image_screen.dart';
 import '../presentation/screens/crashlytics_test_screen.dart';
+import '../presentation/screens/secure_storage_screen.dart';
 
 /// Route names used in the app
 class AppRoutes {
@@ -14,6 +15,7 @@ class AppRoutes {
   static const String register = '/register';
   static const String cachedImages = '/cached-images';
   static const String crashlyticsTest = '/crashlytics-test';
+  static const String secureStorage = '/secure-storage';
 
   // Prevent instantiation
   AppRoutes._();
@@ -42,6 +44,11 @@ class AppRouter {
       case AppRoutes.crashlyticsTest:
         return MaterialPageRoute(
           builder: (_) => const CrashlyticsTestScreen(),
+        );
+
+      case AppRoutes.secureStorage:
+        return MaterialPageRoute(
+          builder: (_) => const SecureStorageScreen(),
         );
 
       // TODO: Add more routes as screens are created
