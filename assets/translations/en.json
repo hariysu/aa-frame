@@ -37,6 +37,9 @@
       "spanish": "Spanish",
       "turkish": "Turkish",
       "german": "German",
+      "french": "French",
+      "japanese": "Japanese",
+      "arabic": "Arabic",
       "changed": "Language changed to {language}"
     },
     "about": {

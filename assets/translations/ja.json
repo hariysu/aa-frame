@@ -1,0 +1,67 @@
+{
+  "app": {
+    "name": "AA Frame",
+    "title": "AA Frame"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "retry": "再試行",
+    "search": "検索"
+  },
+  "home": {
+    "title": "ホーム",
+    "welcome": "AA Frameへようこそ",
+    "view_users": "ユーザーを表示",
+    "users_button_pressed": "ユーザーボタンが押されました",
+    "add_button_pressed": "追加ボタンが押されました"
+  },
+  "settings": {
+    "title": "設定",
+    "appearance": "外観",
+    "theme": {
+      "light": "ライトテーマ",
+      "dark": "ダークテーマ",
+      "system": "システムテーマ",
+      "changed": "テーマが{theme}に変更されました"
+    },
+    "language": {
+      "title": "言語",
+      "english": "英語",
+      "spanish": "スペイン語",
+      "turkish": "トルコ語",
+      "german": "ドイツ語",
+      "french": "フランス語",
+      "japanese": "日本語",
+      "arabic": "アラビア語",
+      "changed": "言語が{language}に変更されました"
+    },
+    "about": {
+      "title": "アプリについて",
+      "subtitle": "アプリバージョン、ライセンスなど",
+      "button_pressed": "アプリについてボタンが押されました"
+    }
+  },
+  "auth": {
+    "login": "ログイン",
+    "register": "登録",
+    "email": "メール",
+    "password": "パスワード",
+    "forgot_password": "パスワードをお忘れですか？",
+    "no_account": "アカウントをお持ちでないですか？",
+    "have_account": "すでにアカウントをお持ちですか？",
+    "sign_up": "サインアップ",
+    "sign_in": "サインイン"
+  },
+  "validation": {
+    "required": "このフィールドは必須です",
+    "email": "有効なメールアドレスを入力してください",
+    "password": "パスワードは8文字以上である必要があります"
+  }
+} 

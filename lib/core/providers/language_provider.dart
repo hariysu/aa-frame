@@ -13,6 +13,17 @@ class LanguageProvider extends ChangeNotifier {
   /// Get current locale
   Locale get locale => _locale;
 
+  /// Get list of supported locales
+  List<Locale> get supportedLocales => const [
+        Locale('en'),
+        Locale('es'),
+        Locale('tr'),
+        Locale('de'),
+        Locale('fr'),
+        Locale('ja'),
+        Locale('ar'),
+      ];
+
   /// Constructor loads saved language
   LanguageProvider() {
     _loadLanguageFromPrefs();
@@ -68,16 +79,14 @@ class LanguageProvider extends ChangeNotifier {
         return 'Türkçe';
       case 'de':
         return 'Deutsch';
+      case 'fr':
+        return 'Français';
+      case 'ja':
+        return '日本語';
+      case 'ar':
+        return 'العربية';
       default:
-        return 'Unknown';
+        return locale.languageCode;
     }
   }
-
-  /// Get supported locales
-  List<Locale> get supportedLocales => const [
-        Locale('en'),
-        Locale('es'),
-        Locale('tr'),
-        Locale('de'),
-      ];
 }

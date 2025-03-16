@@ -71,6 +71,15 @@ class SettingsScreen extends StatelessWidget {
                 case 'de':
                   languageName = 'settings.language.german'.tr();
                   break;
+                case 'fr':
+                  languageName = 'settings.language.french'.tr();
+                  break;
+                case 'ja':
+                  languageName = 'settings.language.japanese'.tr();
+                  break;
+                case 'ar':
+                  languageName = 'settings.language.arabic'.tr();
+                  break;
                 default:
                   languageName = locale.languageCode;
               }
@@ -211,6 +220,12 @@ class _LanguageSelector extends StatelessWidget {
         return 'settings.language.turkish'.tr();
       case 'de':
         return 'settings.language.german'.tr();
+      case 'fr':
+        return 'settings.language.french'.tr();
+      case 'ja':
+        return 'settings.language.japanese'.tr();
+      case 'ar':
+        return 'settings.language.arabic'.tr();
       default:
         return locale.languageCode;
     }

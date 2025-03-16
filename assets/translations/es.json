@@ -4,7 +4,7 @@
     "title": "AA Frame"
   },
   "common": {
-    "ok": "Aceptar",
+    "ok": "OK",
     "cancel": "Cancelar",
     "save": "Guardar",
     "delete": "Eliminar",
@@ -37,6 +37,9 @@
       "spanish": "Español",
       "turkish": "Turco",
       "german": "Alemán",
+      "french": "Francés",
+      "japanese": "Japonés",
+      "arabic": "Árabe",
       "changed": "Idioma cambiado a {language}"
     },
     "about": {
@@ -48,17 +51,17 @@
   "auth": {
     "login": "Iniciar Sesión",
     "register": "Registrarse",
-    "email": "Correo Electrónico",
+    "email": "Correo electrónico",
     "password": "Contraseña",
-    "forgot_password": "¿Olvidó su Contraseña?",
-    "no_account": "¿No tiene una cuenta?",
-    "have_account": "¿Ya tiene una cuenta?",
+    "forgot_password": "¿Olvidaste tu contraseña?",
+    "no_account": "¿No tienes una cuenta?",
+    "have_account": "¿Ya tienes una cuenta?",
     "sign_up": "Registrarse",
     "sign_in": "Iniciar Sesión"
   },
   "validation": {
     "required": "Este campo es obligatorio",
-    "email": "Por favor, introduzca un correo electrónico válido",
+    "email": "Por favor ingresa un correo electrónico válido",
     "password": "La contraseña debe tener al menos 8 caracteres"
   }
 } 

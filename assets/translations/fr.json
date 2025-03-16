@@ -1,0 +1,67 @@
+{
+  "app": {
+    "name": "AA Frame",
+    "title": "AA Frame"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "retry": "Réessayer",
+    "search": "Rechercher"
+  },
+  "home": {
+    "title": "Accueil",
+    "welcome": "Bienvenue sur AA Frame",
+    "view_users": "Voir les utilisateurs",
+    "users_button_pressed": "Bouton utilisateurs pressé",
+    "add_button_pressed": "Bouton ajouter pressé"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "appearance": "Apparence",
+    "theme": {
+      "light": "Thème clair",
+      "dark": "Thème sombre",
+      "system": "Thème système",
+      "changed": "Thème changé en {theme}"
+    },
+    "language": {
+      "title": "Langue",
+      "english": "Anglais",
+      "spanish": "Espagnol",
+      "turkish": "Turc",
+      "german": "Allemand",
+      "french": "Français",
+      "japanese": "Japonais",
+      "arabic": "Arabe",
+      "changed": "Langue changée en {language}"
+    },
+    "about": {
+      "title": "À propos",
+      "subtitle": "Version de l'application, licences et plus",
+      "button_pressed": "Bouton à propos pressé"
+    }
+  },
+  "auth": {
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "email": "Email",
+    "password": "Mot de passe",
+    "forgot_password": "Mot de passe oublié ?",
+    "no_account": "Vous n'avez pas de compte ?",
+    "have_account": "Vous avez déjà un compte ?",
+    "sign_up": "S'inscrire",
+    "sign_in": "Se connecter"
+  },
+  "validation": {
+    "required": "Ce champ est requis",
+    "email": "Veuillez entrer un email valide",
+    "password": "Le mot de passe doit contenir au moins 8 caractères"
+  }
+} 

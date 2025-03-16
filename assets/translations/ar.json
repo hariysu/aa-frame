@@ -1,0 +1,67 @@
+{
+  "app": {
+    "name": "AA Frame",
+    "title": "AA Frame"
+  },
+  "common": {
+    "ok": "موافق",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجاح",
+    "retry": "إعادة المحاولة",
+    "search": "بحث"
+  },
+  "home": {
+    "title": "الرئيسية",
+    "welcome": "مرحبًا بك في AA Frame",
+    "view_users": "عرض المستخدمين",
+    "users_button_pressed": "تم الضغط على زر المستخدمين",
+    "add_button_pressed": "تم الضغط على زر الإضافة"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "appearance": "المظهر",
+    "theme": {
+      "light": "المظهر الفاتح",
+      "dark": "المظهر الداكن",
+      "system": "مظهر النظام",
+      "changed": "تم تغيير المظهر إلى {theme}"
+    },
+    "language": {
+      "title": "اللغة",
+      "english": "الإنجليزية",
+      "spanish": "الإسبانية",
+      "turkish": "التركية",
+      "german": "الألمانية",
+      "french": "الفرنسية",
+      "japanese": "اليابانية",
+      "arabic": "العربية",
+      "changed": "تم تغيير اللغة إلى {language}"
+    },
+    "about": {
+      "title": "حول التطبيق",
+      "subtitle": "إصدار التطبيق، التراخيص، والمزيد",
+      "button_pressed": "تم الضغط على زر حول التطبيق"
+    }
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "register": "التسجيل",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "forgot_password": "نسيت كلمة المرور؟",
+    "no_account": "ليس لديك حساب؟",
+    "have_account": "لديك حساب بالفعل؟",
+    "sign_up": "إنشاء حساب",
+    "sign_in": "تسجيل الدخول"
+  },
+  "validation": {
+    "required": "هذا الحقل مطلوب",
+    "email": "يرجى إدخال بريد إلكتروني صالح",
+    "password": "يجب أن تكون كلمة المرور 8 أحرف على الأقل"
+  }
+} 

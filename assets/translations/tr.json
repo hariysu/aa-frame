@@ -37,6 +37,9 @@
       "spanish": "İspanyolca",
       "turkish": "Türkçe",
       "german": "Almanca",
+      "french": "Fransızca",
+      "japanese": "Japonca",
+      "arabic": "Arapça",
       "changed": "Dil {language} olarak değiştirildi"
     },
     "about": {
@@ -46,7 +49,7 @@
     }
   },
   "auth": {
-    "login": "Giriş Yap",
+    "login": "Giriş",
     "register": "Kayıt Ol",
     "email": "E-posta",
     "password": "Şifre",
@@ -57,7 +60,7 @@
     "sign_in": "Giriş Yap"
   },
   "validation": {
-    "required": "Bu alan zorunludur",
+    "required": "Bu alan gereklidir",
     "email": "Lütfen geçerli bir e-posta adresi girin",
     "password": "Şifre en az 8 karakter olmalıdır"
   }

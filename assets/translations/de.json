@@ -19,8 +19,8 @@
     "title": "Startseite",
     "welcome": "Willkommen bei AA Frame",
     "view_users": "Benutzer anzeigen",
-    "users_button_pressed": "Benutzer-Schaltfläche gedrückt",
-    "add_button_pressed": "Hinzufügen-Schaltfläche gedrückt"
+    "users_button_pressed": "Benutzer-Button gedrückt",
+    "add_button_pressed": "Hinzufügen-Button gedrückt"
   },
   "settings": {
     "title": "Einstellungen",
@@ -28,7 +28,7 @@
     "theme": {
       "light": "Helles Thema",
       "dark": "Dunkles Thema",
-      "system": "Systemthema",
+      "system": "System-Thema",
       "changed": "Thema zu {theme} geändert"
     },
     "language": {
@@ -37,12 +37,15 @@
       "spanish": "Spanisch",
       "turkish": "Türkisch",
       "german": "Deutsch",
+      "french": "Französisch",
+      "japanese": "Japanisch",
+      "arabic": "Arabisch",
       "changed": "Sprache zu {language} geändert"
     },
     "about": {
       "title": "Über",
       "subtitle": "App-Version, Lizenzen und mehr",
-      "button_pressed": "Über-Schaltfläche gedrückt"
+      "button_pressed": "Über-Button gedrückt"
     }
   },
   "auth": {
