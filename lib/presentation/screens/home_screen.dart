@@ -76,6 +76,13 @@ class HomeScreen extends StatelessWidget {
               },
               child: const Text('Secure Storage'),
             ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                AppRouter.navigateTo(context, AppRoutes.svgDemo);
+              },
+              child: const Text('SVG Demo'),
+            ),
           ],
         ),
       ),

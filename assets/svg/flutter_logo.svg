@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256px" height="317px" viewBox="0 0 256 317" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+    <defs>
+        <linearGradient x1="3.9517088%" y1="26.9930287%" x2="75.8970734%" y2="52.9192657%" id="linearGradient-1">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g>
+        <path d="M157.665905,0.000549356223 L0.000549356223,157.665905 L48.8009614,206.466317 L255.267708,0.000549356223 L157.665905,0.000549356223 Z" fill="#47C5FB"></path>
+        <path d="M156.567239,145.396793 L72.1487107,229.815321 L121.132608,279.530905 L169.842925,230.820587 L255.267818,145.396793 L156.567239,145.396793 Z" fill="#47C5FB"></path>
+        <path d="M121.133047,279.531124 L158.214592,316.61267 L255.267159,316.61267 L169.842266,230.820807 L121.133047,279.531124 Z" fill="#00569E"></path>
+        <path d="M71.5995742,230.364072 L120.401085,181.562561 L169.842046,230.821136 L121.132827,279.531453 L71.5995742,230.364072 Z" fill="#00B5F8"></path>
+        <path d="M121.132827,279.531453 L161.692896,266.072227 L165.721875,234.941308" fill="url(#linearGradient-1)" fill-opacity="0.8"></path>
+    </g>
+</svg> 
