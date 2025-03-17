@@ -18,6 +18,10 @@ dependencies:
   flutter_secure_storage: ^9.2.4
 # Localization
   easy_localization: ^3.0.3
+  intl: ^0.19.0
+# File System
+  path: ^1.9.0
+  path_provider: ^2.1.2
 # Notifications
   flutter_local_notifications: ^18.0.1
 # Image Caching
