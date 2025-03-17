@@ -26,71 +26,84 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'home.welcome'.tr(),
-              style: const TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
+      body: SingleChildScrollView(
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'home.welcome'.tr(),
+                  style: const TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    // TODO: Navigate to users screen
+                    Utils.showSnackBar(
+                        context, 'home.users_button_pressed'.tr());
+                  },
+                  child: Text('home.view_users'.tr()),
+                ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    NotificationService.instance.showNotification(
+                      title: 'AA Frame',
+                      body: 'This is a test notification!',
+                    );
+                  },
+                  child: const Text('Show Notification'),
+                ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    AppRouter.navigateTo(context, AppRoutes.cachedImages);
+                  },
+                  child: const Text('View Cached Images'),
+                ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    AppRouter.navigateTo(context, AppRoutes.crashlyticsTest);
+                  },
+                  child: const Text('Test Crashlytics'),
+                ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    AppRouter.navigateTo(context, AppRoutes.secureStorage);
+                  },
+                  child: const Text('Secure Storage'),
+                ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    AppRouter.navigateTo(context, AppRoutes.svgDemo);
+                  },
+                  child: const Text('SVG Demo'),
+                ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    AppRouter.navigateTo(context, AppRoutes.intlDemo);
+                  },
+                  child: const Text('Intl Features'),
+                ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    AppRouter.navigateTo(context, AppRoutes.shimmerDemo);
+                  },
+                  child: const Text('Shimmer Demo'),
+                ),
+              ],
             ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                // TODO: Navigate to users screen
-                Utils.showSnackBar(context, 'home.users_button_pressed'.tr());
-              },
-              child: Text('home.view_users'.tr()),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                NotificationService.instance.showNotification(
-                  title: 'AA Frame',
-                  body: 'This is a test notification!',
-                );
-              },
-              child: const Text('Show Notification'),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                AppRouter.navigateTo(context, AppRoutes.cachedImages);
-              },
-              child: const Text('View Cached Images'),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                AppRouter.navigateTo(context, AppRoutes.crashlyticsTest);
-              },
-              child: const Text('Test Crashlytics'),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                AppRouter.navigateTo(context, AppRoutes.secureStorage);
-              },
-              child: const Text('Secure Storage'),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                AppRouter.navigateTo(context, AppRoutes.svgDemo);
-              },
-              child: const Text('SVG Demo'),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                AppRouter.navigateTo(context, AppRoutes.intlDemo);
-              },
-              child: const Text('Intl Features'),
-            ),
-          ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(

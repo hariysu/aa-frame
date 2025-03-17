@@ -6,6 +6,7 @@ import '../presentation/screens/crashlytics_test_screen.dart';
 import '../presentation/screens/secure_storage_screen.dart';
 import '../presentation/screens/svg_demo_screen.dart';
 import '../presentation/screens/intl_demo_screen.dart';
+import '../presentation/screens/shimmer_demo_screen.dart';
 
 /// Route names used in the app
 class AppRoutes {
@@ -20,6 +21,8 @@ class AppRoutes {
   static const String secureStorage = '/secure-storage';
   static const String svgDemo = '/svg-demo';
   static const String intlDemo = '/intl-demo';
+  static const String shimmerDemo = '/shimmer-demo';
+  static const String fileSystem = '/file-system';
 
   // Prevent instantiation
   AppRoutes._();
@@ -60,9 +63,9 @@ class AppRouter {
           builder: (_) => const SvgDemoScreen(),
         );
 
-      case AppRoutes.intlDemo:
+      case AppRoutes.shimmerDemo:
         return MaterialPageRoute(
-          builder: (_) => const IntlDemoScreen(),
+          builder: (_) => const ShimmerDemoScreen(),
         );
 
       // TODO: Add more routes as screens are created
