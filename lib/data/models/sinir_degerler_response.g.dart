@@ -6,9 +6,9 @@ part of 'sinir_degerler_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-SinirDegerlerResponse _$SinirDegerlerResponseFromJson(
+_$SinirDegerlerResponseImpl _$$SinirDegerlerResponseImplFromJson(
         Map<String, dynamic> json) =>
-    SinirDegerlerResponse(
+    _$SinirDegerlerResponseImpl(
       esikDegerMadde13Alt: (json['EsikDeger_Madde13Alt'] as num).toInt(),
       esikDegerMadde13Orta: (json['EsikDeger_Madde13Orta'] as num).toInt(),
       esikDegerMadde13Ust: (json['EsikDeger_Madde13Ust'] as num).toInt(),
@@ -27,8 +27,8 @@ SinirDegerlerResponse _$SinirDegerlerResponseFromJson(
       sonuc: SonucModel.fromJson(json['Sonuc'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$SinirDegerlerResponseToJson(
-        SinirDegerlerResponse instance) =>
+Map<String, dynamic> _$$SinirDegerlerResponseImplToJson(
+        _$SinirDegerlerResponseImpl instance) =>
     <String, dynamic>{
       'EsikDeger_Madde13Alt': instance.esikDegerMadde13Alt,
       'EsikDeger_Madde13Orta': instance.esikDegerMadde13Orta,
@@ -47,14 +47,15 @@ Map<String, dynamic> _$SinirDegerlerResponseToJson(
       'Sonuc': instance.sonuc,
     };
 
-SonucModel _$SonucModelFromJson(Map<String, dynamic> json) => SonucModel(
+_$SonucModelImpl _$$SonucModelImplFromJson(Map<String, dynamic> json) =>
+    _$SonucModelImpl(
       mesaj: json['Mesaj'] as String,
       resultCode: (json['ResultCode'] as num).toInt(),
       sonuc: json['Sonuc'] as bool,
       uniqueName: json['UniqueName'] as String?,
     );
 
-Map<String, dynamic> _$SonucModelToJson(SonucModel instance) =>
+Map<String, dynamic> _$$SonucModelImplToJson(_$SonucModelImpl instance) =>
     <String, dynamic>{
       'Mesaj': instance.mesaj,
       'ResultCode': instance.resultCode,
