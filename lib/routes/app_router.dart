@@ -65,6 +65,11 @@ class AppRouter {
 
       case AppRoutes.shimmerDemo:
         return MaterialPageRoute(
+          builder: (_) => const IntlDemoScreen(),
+        );
+
+      case AppRoutes.shimmerDemo:
+        return MaterialPageRoute(
           builder: (_) => const ShimmerDemoScreen(),
         );
 
