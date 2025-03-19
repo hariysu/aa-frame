@@ -101,6 +101,13 @@ class HomeScreen extends StatelessWidget {
                   },
                   child: const Text('Shimmer Demo'),
                 ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    AppRouter.navigateTo(context, AppRoutes.sinirDegerler);
+                  },
+                  child: const Text('Sınır Değerler'),
+                ),
               ],
             ),
           ),

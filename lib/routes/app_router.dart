@@ -7,6 +7,7 @@ import '../presentation/screens/secure_storage_screen.dart';
 import '../presentation/screens/svg_demo_screen.dart';
 import '../presentation/screens/intl_demo_screen.dart';
 import '../presentation/screens/shimmer_demo_screen.dart';
+import '../presentation/screens/sinir_degerler_screen.dart';
 
 /// Route names used in the app
 class AppRoutes {
@@ -23,6 +24,7 @@ class AppRoutes {
   static const String intlDemo = '/intl-demo';
   static const String shimmerDemo = '/shimmer-demo';
   static const String fileSystem = '/file-system';
+  static const String sinirDegerler = '/sinir-degerler';
 
   // Prevent instantiation
   AppRoutes._();
@@ -63,7 +65,7 @@ class AppRouter {
           builder: (_) => const SvgDemoScreen(),
         );
 
-      case AppRoutes.shimmerDemo:
+      case AppRoutes.intlDemo:
         return MaterialPageRoute(
           builder: (_) => const IntlDemoScreen(),
         );
@@ -71,6 +73,11 @@ class AppRouter {
       case AppRoutes.shimmerDemo:
         return MaterialPageRoute(
           builder: (_) => const ShimmerDemoScreen(),
+        );
+
+      case AppRoutes.sinirDegerler:
+        return MaterialPageRoute(
+          builder: (_) => const SinirDegerlerScreen(),
         );
 
       // TODO: Add more routes as screens are created
