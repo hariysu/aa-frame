@@ -8,6 +8,7 @@ import '../presentation/screens/svg_demo_screen.dart';
 import '../presentation/screens/intl_demo_screen.dart';
 import '../presentation/screens/shimmer_demo_screen.dart';
 import '../presentation/screens/sinir_degerler_screen.dart';
+import '../presentation/screens/login_screen.dart';
 
 /// Route names used in the app
 class AppRoutes {
@@ -80,6 +81,11 @@ class AppRouter {
           builder: (_) => const SinirDegerlerScreen(),
         );
 
+      case AppRoutes.login:
+        return MaterialPageRoute(
+          builder: (_) => const LoginScreen(),
+        );
+
       // TODO: Add more routes as screens are created
       // case AppRoutes.users:
       //   return MaterialPageRoute(
@@ -90,11 +96,6 @@ class AppRouter {
       //   final userId = settings.arguments as String;
       //   return MaterialPageRoute(
       //     builder: (_) => UserDetailsScreen(userId: userId),
-      //   );
-
-      // case AppRoutes.login:
-      //   return MaterialPageRoute(
-      //     builder: (_) => const LoginScreen(),
       //   );
 
       // case AppRoutes.register:

@@ -108,6 +108,13 @@ class HomeScreen extends StatelessWidget {
                   },
                   child: const Text('Sınır Değerler'),
                 ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    AppRouter.navigateTo(context, AppRoutes.login);
+                  },
+                  child: const Text('Login'),
+                ),
               ],
             ),
           ),
