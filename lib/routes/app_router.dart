@@ -9,6 +9,7 @@ import '../presentation/screens/intl_demo_screen.dart';
 import '../presentation/screens/shimmer_demo_screen.dart';
 import '../presentation/screens/sinir_degerler_screen.dart';
 import '../presentation/screens/login_screen.dart';
+import '../presentation/screens/profile_screen.dart';
 
 /// Route names used in the app
 class AppRoutes {
@@ -18,6 +19,7 @@ class AppRoutes {
   static const String settings = '/settings';
   static const String login = '/login';
   static const String register = '/register';
+  static const String profile = '/profile';
   static const String cachedImages = '/cached-images';
   static const String crashlyticsTest = '/crashlytics-test';
   static const String secureStorage = '/secure-storage';
@@ -84,6 +86,11 @@ class AppRouter {
       case AppRoutes.login:
         return MaterialPageRoute(
           builder: (_) => const LoginScreen(),
+        );
+
+      case AppRoutes.profile:
+        return MaterialPageRoute(
+          builder: (_) => const ProfileScreen(),
         );
 
       // TODO: Add more routes as screens are created
