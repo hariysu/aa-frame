@@ -4,20 +4,33 @@ A well-structured Flutter application template that follows best practices for s
 
 ## Features
 
-- **Organized Structure**: Clear separation of concerns with a well-defined folder structure
+- **Organized Structure**: Clean architecture with clear separation of concerns
 - **Theme Support**: Light and dark theme support with dynamic theme switching
 - **Localization**: Multi-language support with easy_localization
-  - English
-  - Spanish
-  - Turkish
-  - German
+  - English (en)
+  - Spanish (es)
+  - Turkish (tr)
+  - German (de)
+  - French (fr)
+  - Japanese (ja)
+  - Arabic (ar)
+- **Firebase Integration**:
+  - Authentication (Email/Password, Google, Apple)
+  - Cloud Firestore for database
+  - Firebase Storage for file storage
+  - Crashlytics for error tracking
 - **Local Notifications**: Push notification support using flutter_local_notifications
-- **Image Caching**: Efficient image loading and caching with cached_network_image
-- **Error Tracking**: Firebase Crashlytics integration for error reporting and monitoring
+- **Image Handling**:
+  - Efficient image loading and caching with cached_network_image
+  - Image picking functionality
+  - SVG support
+- **State Management**: Provider-based state management
+- **Security**: Secure storage for sensitive data
 - **Routing**: Centralized routing system
 - **Environment Configuration**: Support for different environments (development, staging, production)
 - **API Integration**: Ready-to-use API service for network requests
 - **Reusable Components**: Custom widgets for consistent UI
+- **Code Generation**: JSON serialization with freezed
 
 ## Project Structure
 
@@ -37,22 +50,15 @@ lib/
 │       └── crashlytics_service.dart
 ├── data/               # Data layer
 │   ├── models/         # Data models
-│   │   └── user_model.dart
 │   ├── repositories/   # Repositories for data access
-│   │   └── user_repository.dart
 │   └── services/       # Services for external APIs
-│       └── api_service.dart
 ├── presentation/       # UI layer
 │   ├── screens/        # App screens
-│   │   ├── home_screen.dart
-│   │   ├── settings_screen.dart
-│   │   ├── cached_image_screen.dart
-│   │   └── crashlytics_test_screen.dart
 │   └── widgets/        # Reusable widgets
-│       └── custom_button.dart
 ├── routes/             # Navigation
 │   └── app_router.dart # App routing configuration
-└── main.dart           # Entry point
+├── main.dart           # Entry point
+└── firebase_options.dart # Firebase configuration
 ```
 
 ## Getting Started
@@ -65,19 +71,58 @@ lib/
    - Download and add configuration files:
      - `google-services.json` for Android
      - `GoogleService-Info.plist` for iOS
+   - Enable required Firebase services:
+     - Authentication (Email/Password, Google, Apple)
+     - Cloud Firestore
+     - Firebase Storage
+     - Crashlytics
 4. Run `flutter run` to start the app
 
 ## Dependencies
 
+### Core Dependencies
 - Flutter SDK: ^3.6.2
-- provider: ^6.1.1
+- provider: ^6.1.1 (State Management)
+- http: ^1.1.0 (Networking)
+
+### Storage & Security
 - shared_preferences: ^2.2.2
+- flutter_secure_storage: ^9.2.4
+- path: ^1.9.0
+- path_provider: ^2.1.2
+
+### UI & Effects
 - easy_localization: ^3.0.3
-- flutter_local_notifications: ^18.0.1
+- intl: ^0.19.0
+- shimmer: ^3.0.0
 - cached_network_image: ^3.4.1
-- firebase_core: ^2.27.1
-- firebase_crashlytics: ^3.4.19
-- http: ^1.1.0
+- flutter_svg: ^2.0.17
+
+### Firebase
+- firebase_core: ^3.12.1
+- firebase_crashlytics: ^4.3.4
+- firebase_auth: ^5.5.1
+- cloud_firestore: ^5.6.5
+- firebase_storage: ^12.4.4
+- google_sign_in: ^6.3.0
+- sign_in_with_apple: ^6.1.4
+
+### Notifications & Media
+- flutter_local_notifications: ^18.0.1
+- image_picker: ^1.1.2
+
+### Code Generation
+- json_annotation: ^4.9.0
+- freezed_annotation: ^2.4.1
+
+### Development
+- flutter_test
+- flutter_lints: ^5.0.0
+- build_runner: ^2.4.15
+- flutter_launcher_icons: ^0.13.1
+- flutter_native_splash: ^2.3.11
+- json_serializable: ^6.9.4
+- freezed: ^2.4.5
 
 ## Features Guide
 
@@ -87,19 +132,27 @@ lib/
 - Material 3 design support
 
 ### Localization
-- Support for multiple languages
+- Support for 7 languages
 - Easy addition of new languages
 - Persistent language preferences
 - Automatic locale detection
+
+### Firebase Integration
+- Complete authentication flow
+- Cloud Firestore database integration
+- Firebase Storage for file management
+- Crashlytics for error tracking
+- Social sign-in (Google and Apple)
 
 ### Local Notifications
 - Push notification support
 - Customizable notification content
 - Support for both Android and iOS
 
-### Image Caching
-- Efficient image loading
-- Automatic caching
+### Image Handling
+- Efficient image loading and caching
+- Image picking from gallery/camera
+- SVG support
 - Placeholder support
 - Error handling
 
@@ -112,13 +165,16 @@ lib/
 
 ## Best Practices
 
+- Follow clean architecture principles
 - Use named routes for navigation
-- Follow the repository pattern for data access
+- Implement repository pattern for data access
 - Keep UI and business logic separate
 - Use constants for hardcoded values
 - Document your code with comments
 - Handle errors appropriately using Crashlytics
 - Cache network resources when possible
+- Use code generation for data models
+- Implement proper state management
 
 ## Contributing
 
