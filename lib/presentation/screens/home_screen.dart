@@ -122,6 +122,13 @@ class HomeScreen extends StatelessWidget {
                   },
                   child: const Text('Edit Profile'),
                 ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    AppRouter.navigateTo(context, AppRoutes.analytics);
+                  },
+                  child: const Text('Analytics Screen'),
+                ),
               ],
             ),
           ),

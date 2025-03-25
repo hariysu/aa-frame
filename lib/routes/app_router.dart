@@ -10,6 +10,7 @@ import '../presentation/screens/shimmer_demo_screen.dart';
 import '../presentation/screens/sinir_degerler_screen.dart';
 import '../presentation/screens/login_screen.dart';
 import '../presentation/screens/profile_screen.dart';
+import '../presentation/screens/analytics_screen.dart';
 
 /// Route names used in the app
 class AppRoutes {
@@ -28,6 +29,7 @@ class AppRoutes {
   static const String shimmerDemo = '/shimmer-demo';
   static const String fileSystem = '/file-system';
   static const String sinirDegerler = '/sinir-degerler';
+  static const String analytics = '/analytics';
 
   // Prevent instantiation
   AppRoutes._();
@@ -91,6 +93,11 @@ class AppRouter {
       case AppRoutes.profile:
         return MaterialPageRoute(
           builder: (_) => const ProfileScreen(),
+        );
+
+      case AppRoutes.analytics:
+        return MaterialPageRoute(
+          builder: (_) => const AnalyticsScreen(),
         );
 
       // TODO: Add more routes as screens are created
