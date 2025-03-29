@@ -1,0 +1,2 @@
+/Users/abd/Development/Flutter_Dev/aa_frame/android/app/.cxx/Debug/1d6b3v71/x86_64/CMakeFiles/edit_cache.dir
+/Users/abd/Development/Flutter_Dev/aa_frame/android/app/.cxx/Debug/1d6b3v71/x86_64/CMakeFiles/rebuild_cache.dir
